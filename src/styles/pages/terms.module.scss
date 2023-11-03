@@ -1,0 +1,49 @@
+.termsListBox{
+  background: var(--card-bg);
+  padding: 10px 30px;
+  margin: 50px 0;
+  border: 1px solid var(--card-border-color);
+  border-radius: 12px;
+
+  .lists{
+    list-style:none;
+    .item{
+      position: relative;
+      margin: 10px 0;
+      &:before{
+        content: "";
+        bottom: 7px;
+        left: -15px;
+        width: 10px;
+        position: absolute;
+        height: 10px;
+        background: var(--select-color);
+        border-radius: 50%;
+      }
+    }
+  }
+
+}
+
+.termsItemDetail{
+
+  .termTitle{
+    color: var(--select-color);
+    font-size: 22px;
+  }
+
+
+}
+
+
+.olLists{
+  width: 98%;
+  list-style: white;
+  text-align: justify;
+  .olItem{
+    margin: 15px 40px;
+    @media (max-width: 1000px) {
+      margin: 15px;
+    }
+  }
+}

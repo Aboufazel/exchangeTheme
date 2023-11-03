@@ -1,0 +1,70 @@
+
+.footerBlock {
+  position: relative;
+  background: var(--footer-bg);
+  margin-top: 110px;
+  margin-bottom: 40px;
+  padding: 40px;
+  @media (max-width: 1000px) {
+    padding: 40px 19px;
+    margin-top: 80px;
+  }
+  border-radius: 12px;
+  border: 1px solid var(--card-border-color);
+  &.borderGr {
+    border: 1px solid transparent;
+    border-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.15));
+    border-image-slice: 1;
+    clip-path: border-box;
+  }
+
+  .footerTitle{
+    font-size: 16px;
+    margin: 11px 0 25px 0 !important;
+  }
+
+  .footerLogo{
+    position: absolute;
+    top: -41px;
+    background: var(--color-primary);
+    width: 75px;
+    left: 80px;
+    @media (max-width: 1000px) {
+      left: 17px;
+    }
+    height: 75px;
+    border: 0.75px solid var(--card-border-color);
+    border-radius: 22px;
+  }
+
+  .list {
+    list-style: none;
+    padding-left: 0;
+    cursor: pointer;
+
+
+    .item {
+      margin: 10px 0;
+      transition: 0.45s;
+
+      &:hover {
+        text-underline-offset: 5px;
+        color: var(--select-color);
+        transform: translateY(-2px);
+        scale: 1.02;
+      }
+    }
+  }
+
+
+  .social{
+    transition: 0.45s;
+    padding-bottom: 5px;
+    &:hover{
+      border-bottom:1px solid var(--select-color);
+      transform: translateY(-2px);
+      scale: 1.1;
+    }
+  }
+
+}

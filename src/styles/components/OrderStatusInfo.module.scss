@@ -1,0 +1,23 @@
+
+.orderInfoBox {
+  padding: 12px 20px;
+  border: 0.5px solid var(--wallet-info-border);
+  border-radius: 5px;
+}
+
+
+.secondaryOrderInfoBox{
+  padding: 12px 20px;
+  border: 0.5px solid var(--wallet-info-border);
+  border-radius: 5px;
+}
+
+
+.paidStatus{
+  color:var(--select-color);
+}
+
+
+.pendingStatus{
+  color:var(--pending-color);
+}

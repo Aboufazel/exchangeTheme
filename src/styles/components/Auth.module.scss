@@ -1,0 +1,88 @@
+
+.loginBox{
+  @media (max-width: 1000px) {
+    width: 100%;
+    height: max-content;
+    padding: 15px;
+  }
+  background: var(--card-bg);
+  padding: 20px;
+  width: 579px;
+  height: 440px;
+  border-radius: 12px;
+  border:0.5px solid var(--blog-border-color);
+
+  .NameInput{
+    width: 100%;
+    background: var(--area-bg);
+    padding:9px 33px;
+    border-radius: 5px;
+
+  }
+
+}
+
+
+.titleDivider{
+  height: 20px;
+  width: 1px;
+  background:var(--blog-border-color);
+}
+
+
+.registerLink{
+  color: var(--select-color);
+}
+
+
+.otherLoginLeftLine{
+  background: var(--blog-border-color);
+  width: 215px;
+  height: 1px;
+  left: -20px;
+  position: relative;
+
+  @media(max-width: 1000px){
+    width: 50px;
+  }
+}
+
+
+.otherLoginRightLine{
+  background: var(--blog-border-color);
+  width: 215px;
+  height: 1px;
+  right: -20px;
+  position: relative;
+
+  @media(max-width: 1000px){
+    width: 50px;
+  }
+}
+
+
+.backBtn{
+  background: var(--card-bg);
+  width: 110px;
+  height: 35px;
+  border: 1px solid var(--blog-border-color);
+  border-radius: 8px;
+  padding: 8px;
+  transition: 0.3s;
+  &:hover{
+    background: var(--exchange-btn-border);
+  }
+}
+
+.senAgain{
+  color: var(--select-color);
+  cursor: pointer;
+  padding-bottom: 3px;
+  border-bottom: 0.5px solid var(--exchange-btn-border);
+}
+
+.editMail{
+  span{
+    color: var(--exchange-btn-border);
+  }
+}

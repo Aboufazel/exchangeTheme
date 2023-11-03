@@ -1,0 +1,100 @@
+.coinCard {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 10px 7px;
+  height: 50px;
+  border-radius: 5px;
+  margin: 8px 0;
+  transition: 0.5s;
+  z-index: 0;
+
+  .selectGreenLight {
+    position: absolute;
+    background: var(--select-color);
+    top: 39px;
+    left: 20px;
+    opacity: 0;
+    filter: blur(12.5px);
+    width: 16px;
+    height: 20px;
+    transition: 0.02s;
+    z-index: -5;
+  }
+
+
+  .coinIcon {
+    margin-right: 20px;
+    margin-left: 6px;
+  }
+
+  .coinTitle {
+    font-size: 14px;
+  }
+
+  .arrowRight{
+    position: absolute;
+    top: 20px;
+    right: 12px;
+    margin-top: -4px;
+    opacity: 0;
+
+    .icon {
+      stroke: var(--color-white);
+      width: 16px;
+      height: 16px;
+    }
+  }
+  &:active {
+    &:after {
+      content: "";
+      background: var(--select-color);
+      bottom: 0;
+      width: 35px;
+      height: 2px;
+      left: 10px;
+      position: absolute;
+    }
+
+    &:before {
+      content: "";
+    }
+
+    cursor: pointer;
+    background: var(--background-card-hover);
+
+    .arrowRight {
+      opacity: 1;
+    }
+
+    .selectGreenLight {
+      opacity: 0.4;
+    }
+  }
+  &:hover {
+    &:after {
+      content: "";
+      background: var(--select-color);
+      bottom: 0;
+      width: 35px;
+      height: 2px;
+      left: 10px;
+      position: absolute;
+    }
+
+    &:before {
+      content: "";
+    }
+
+    cursor: pointer;
+    background: var(--background-card-hover);
+
+    .arrowRight {
+      opacity: 1;
+    }
+
+    .selectGreenLight {
+      opacity: 0.4;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.AboutExchangerCard{
+  background: var(--card-bg);
+  border:0.75px solid var(--card-border-color);
+  border-radius: 12px;
+  padding: 20px 79px  40px 79px;
+
+  @media (max-width: 1000px) {
+    padding: 10px;
+    text-align: center;
+  }
+  .CardTitle{
+    letter-spacing: 5px;
+    font-size: 48px;
+
+    @media (max-width: 1000px) {
+      letter-spacing: 2px;
+      font-size: 20px;
+    }
+  }
+
+  .CardImage{
+    right: 9px;
+    top: -34px;
+    @media (max-width: 1000px) {
+      width: 35%;
+      top: 0;
+    }
+  }
+
+  .CardText{
+    width: 477px;
+    margin-top: 10px;
+
+    @media (max-width: 1000px) {
+      width: 100%;
+      font-size: 14px;
+    }
+
+  }
+}

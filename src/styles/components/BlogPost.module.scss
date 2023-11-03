@@ -1,0 +1,286 @@
+
+.BlogPostBanner {
+  background: var(--card-bg);
+  padding: 25px;
+  border-radius: 12px;
+  border: 0.75px solid var(--blog-border-color);
+  margin: 65px 0 40px 0;
+  cursor: pointer;
+
+
+  @media (max-width: 1000px) {
+    margin-top: 40px;
+  }
+
+
+  .BlogBannerTitle {
+    margin-top: 53px;
+    font-size: 60px;
+    line-height: 60px;
+
+    span {
+      &::after {
+        content: '\a';
+        white-space: pre;
+      }
+    }
+
+    @media (max-width: 1000px) {
+      margin-top: 32px;
+      font-size: 25px;
+      line-height: 30px;
+    }
+  }
+
+  .BlogBannerText {
+    margin: 24px 0 44px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 800px;
+  }
+
+
+  .writerBlock {
+    &:after {
+      content: "";
+      background: var(--select-color);
+      bottom: -12px;
+      width: 40px;
+      height: 3px;
+      position: absolute;
+    }
+
+    position: relative;
+
+    .writerProfile {
+      width: 40px;
+      height: 40px;
+      border: 1px solid var(--card-border-color);
+      border-radius: 8px;
+      background: var(--footer-bg);
+    }
+
+    .profileWriterLight {
+      position: absolute;
+      background: var(--select-color);
+      opacity: 0.3;
+      top: 34px;
+      left: 8px;
+      filter: blur(12.5px);
+      height: 25px;
+      width: 20px;
+    }
+
+    .writerName {
+      font-size: 14px;
+
+      span {
+        &::after {
+          content: '\a';
+          white-space: pre;
+        }
+      }
+
+    }
+
+  }
+}
+
+
+
+.BlogPostBorder{
+  border: 1px solid var(--select-color);
+  border-radius: 8px;
+}
+
+.BlogBadge {
+  background: var(--card-bg);
+  width: 110px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  boredr: 1px solid var(--blog-border-color);
+  box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.25);
+
+  @media (max-width: 1000px) {
+    margin-top: 10px;
+  }
+
+  &.bgGreen {
+    background: var(--card-bg);
+  }
+}
+
+
+.BlogPostBadge {
+  background: var(--blog-post-badge-bg);
+  width: 110px;
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid var(--select-color);
+  box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.25);
+
+  @media (max-width: 1000px) {
+    margin-top: 10px;
+  }
+}
+
+
+.date {
+  font-size: 12px;
+  color: var(--data-color);
+
+  @media (max-width: 1000px) {
+    font-size: 10px;
+  }
+}
+
+.SecondaryBade {
+  position: relative;
+  color: var(--select-color);
+  margin-right: 10px;
+
+  @media (max-width: 1000px) {
+    font-size: 10px;
+  }
+
+  &:after {
+    content: "";
+    background: var(--data-color);
+    position: absolute;
+    width: 1px;
+    height: 15px;
+    bottom: 5px;
+    right: -6px;
+
+    @media (max-width: 1000px) {
+      bottom: 1px;
+    }
+
+  }
+
+}
+
+
+.BlogPostCard {
+  background: var(--card-bg);
+  padding: 23px;
+  border-radius: 12px;
+  border: 0.75px solid var(--blog-border-color);
+
+  .CardTitle {
+    font-size: 22px;
+    margin: 20px 0 10px 0;
+  }
+
+  .postText {
+    font-size: 16px;
+    color: var(--data-color);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 500px;
+  }
+}
+
+
+.TextDivider{
+  border-bottom: 1px solid var(--blog-border-color);
+}
+
+
+.BlogPostTitle {
+  color: var(--select-color);
+  font-size: 22px;
+}
+
+.BlogPostData {
+  background: var(--card-bg);
+  width: 230px;
+  padding: 9px;
+  border: 1px solid var(--blog-border-color);
+  border-radius: 5px;
+}
+
+
+
+
+.SecondaryBlogPostCard {
+
+  .CardTitle {
+    font-size: 18px;
+    margin: 20px 0 10px 0;
+  }
+
+  .postText {
+    font-size: 16px;
+    color: var(--data-color);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 500px;
+  }
+}
+
+
+.BlogWriterProfile{
+  &:after {
+    content: "";
+    background: var(--select-color);
+    bottom: -18px;
+    width: 55px;
+    height: 3px;
+    position: absolute;
+  }
+
+  position: relative;
+
+  .writerProfile {
+    width: 55px;
+    height: 55px;
+    border: 1px solid var(--card-border-color);
+    border-radius: 8px;
+    background: var(--footer-bg);
+  }
+
+  .profileWriterLight {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    left: 10px;
+    top: 50px;
+    background: #3DECBE;
+    opacity: 0.3;
+    filter: blur(12.5px);
+  }
+
+  .writerName {
+    font-size: 14px;
+
+    span {
+      &::after {
+        content: '\a';
+        white-space: pre;
+      }
+    }
+
+  }
+}
+
+
+
+
+.BlogBackBtn{
+  background: var(--card-bg);
+  color: var(--color-white);
+  width: 110px;
+  height: 35px;
+  padding: 8px;
+  margin-bottom: 45px;
+  border:1px solid var(--blog-border-color);
+  border-radius: 8px;
+  position: relative;
+  left: -342px;
+}
+
+
